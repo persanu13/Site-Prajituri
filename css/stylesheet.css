@@ -1,0 +1,1169 @@
+
+*{margin: 0;padding:0;box-sizing: border-box;
+  }
+
+body{margin: 0;background-image:url(../img/background1.jpg); }
+
+
+
+
+#butoane2{display:none;}
+
+
+
+#navigatie{background-color:black;display: block; height:150px;
+  width:100%;
+  position: fixed;
+  transition:1s;
+
+
+}
+
+#navigatie #sus{display:flex;
+
+   }
+
+#navigatie #sus #logouri{ padding: 20px;flex-basis: 33%;text-align: end;}
+
+#navigatie #sus #logouri .fab {
+  
+  margin-right: 50px;
+  font-size:33px;
+  padding-top:10px;
+  padding-bottom:10px;
+  color: palevioletred;
+
+
+
+}
+#navigatie #sus h1{ text-align:center; color:white;padding:20px;font-size: 45px;grid-column:4;
+    font-family: 'Orelega One', cursive;flex-basis:34%;
+
+}
+#navigatie #sus #none{padding: 20px;flex-basis: 33%;}
+
+#menu  {background-color:#00ffbf;border-bottom: solid 5px gold;display:inline-flex;justify-content: center;list-style: none;width: 100%;
+}
+#menu ul {
+  display:inline-flex;
+  text-decoration: none;
+  list-style: none;
+  flex-basis:50%;
+  justify-content: flex-end;
+
+
+     }
+
+  #menu ul  li{
+    width: 150px;
+    margin: 15px;margin-top:2px;margin-bottom:2px;
+    padding: 10px;
+    padding-top:12px;
+       }
+       #menu ul li:hover{background-color: teal; 
+       border-radius:5px;}
+       
+#menu ul li a{font-family: 'Orelega One', cursive;
+    text-decoration:none;
+    color:#333333; 
+    font-size: 25px;
+}
+
+
+
+
+
+#casa{color:#262626;font-size: 25px;}
+#lupa{color: gray;font-size: 25px;}
+#telefon{color: #006600;font-size: 25px;}
+
+
+
+#continut{display:flex;
+  height:100%;
+  width: 100%;
+  padding-top: 200px;
+  flex-wrap: wrap;
+  
+  
+}
+
+  
+  
+
+#butoane{flex-basis:100%;display: flex;justify-content: flex-end;margin-right:0px;padding:20px;
+  font-family: 'Orelega One', cursive;
+  color: #cb3466;
+  
+  
+}
+#butoane a #schimb3 { background-color:transparent;font-size:20px;margin-left: 5px; }
+#butoane a #schimb4 {background-color:transparent;font-size:20px; margin-left: 5px;}
+
+#butoane a #schimb3 {
+  color:#ff0040;
+   text-decoration: none;
+   font-size:25px;
+}
+#butoane p {font-size: 25px;}
+
+#butoane a #schimb4 { text-decoration: none;
+color: #cb3466;font-size:25px;
+
+}
+
+#butoane a{text-decoration: none;}
+
+#mijloc{background-color:transparent;
+  height:auto; width:1200px;    
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  margin-top:50px;margin-bottom: 100;
+   margin-left:22vw;
+   }
+
+
+
+#casuta{
+  
+  background-color: white;
+  max-width: calc(33.33% - 40px  );
+  flex-basis: calc(33.33% - 40px  );
+  margin: 20px;
+  border: solid 2px palevioletred;
+
+
+        
+}
+#casuta:hover  {border-color: #b3003b;}
+
+
+#casuta a .img{ 
+  width: 100%;
+  margin: 0;
+ padding: 0;
+
+}
+
+ #casuta a{text-decoration: none;}
+
+ 
+#casuta a #pret{
+  padding-top:15px;
+   text-align:center; 
+   font-family: 'Orelega One', cursive;
+    color: palevioletred;
+    padding-top:15px;
+    padding-bottom:15px;
+    font-size:0.8vw;
+   margin:auto;
+  
+  }
+  #casuta a #pret h1{margin: auto; padding: auto;text-align: center; }
+
+
+#casuta:hover a #pret{color:#b3003b;}
+
+
+
+
+
+
+
+
+#meniu{position: fixed;  
+       margin-left:50px;
+       
+       font-size:20px;  
+       transition: 1s;
+            
+}
+#meniu ul li a{
+  text-decoration:none;
+  color:#d14775 ;
+  font-family: 'Orelega One', cursive;
+}
+#meniu ul li a:hover{color:	#b3003b;}
+
+
+#meniu ul .text{text-align: center;color:#b82e5c;font-family: 'Orelega One', cursive;font-size: 25px;  }
+
+
+#meniu ul{list-style:none;}
+#meniu ul li{padding: 10px;
+
+}
+
+
+
+.wrapper{flex-basis:20%;
+  display: flex;
+  padding:10px;
+  margin-right:50px;
+ 
+  
+ 
+}
+
+ 
+  #menu  .search:hover{background-color:#00ffbf;  border-radius:5px;}
+ 
+ 
+  .wrapper .search-input{
+    background: #fff;
+    flex-basis:100%;
+    border-radius:5px;
+    position: fixed;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+    margin-right:20px;
+  
+  }
+  
+  .search-input input{
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+    color: #737373;font-family:'Orelega One', cursive;font-size: 20px;
+    
+  }
+  
+  .search-input.active input{
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .search-input .autocom-box{
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y:auto;
+  }
+  
+  .search-input.active .autocom-box{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+    
+  }
+  
+
+
+  .autocom-box li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    cursor: default;
+    border-radius: 3px;
+    font-family: 'Orelega One', cursive;
+    
+   
+  }
+
+
+#menu .wrapper .search-input .autocom-box li{margin:0;width:100%;}
+  
+  .search-input.active .autocom-box li{
+    display: block;
+    font-size:19px;
+    text-align: start;
+    color: #737373;
+    font-family: 'Orelega One', cursive;
+
+  }
+  #menu:hover .autocom-box li:hover{
+    background: #efefef;
+    color:#4d4d4d;
+    
+    
+  }
+  
+  .search-input .icon{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 35px;
+    width: 55px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    color: #00ffbf;
+    cursor: pointer;
+  }
+
+
+#jos{height:300px;background-color:#eaeaea;margin-top: 150px;display: flex; }
+
+
+
+
+
+#jos #contact{flex-basis:65% ;
+
+}
+
+#jos h1{
+  margin-left:150px;
+ padding-top: 50px;
+ font-family: 'Orelega One', cursive;
+ margin-bottom: 40px;
+ color: #b82e5c
+}
+#jos p{
+  font-size:19px;
+  margin-left:150px;
+  padding-top:5px;
+  font-family: 'Orelega One', cursive;
+  color: #d14775;;
+
+}
+
+
+
+
+
+
+#poza{margin-left: 20vw;
+  padding-top:200px; 
+  
+  padding-bottom:50px;
+  flex-basis:50%;
+
+  }
+#poza img{
+ 
+  
+  border: palevioletred solid 4px;
+  
+ 
+
+}
+
+#textinfo{margin-left: 10vw;
+       padding-top:100px; 
+       
+       flex-basis: 30vw;
+       padding-bottom:50px;
+      
+      
+           
+
+}
+
+#textinfo h1{text-align:center;
+             padding:20px;
+            padding-top:0;
+            font-family: 'Orelega One', cursive;
+            color:#29293d;
+            font-size:40px;
+            margin-bottom: 100px;
+            
+            }
+
+#textinfo h2 {  text-align:start;
+  padding:20px;
+ padding-top:0;
+ font-family: 'Orelega One', cursive;
+ color:#29293d;  
+font-size: 30px;
+}  
+
+ #textinfo ul{   
+  text-align:start;
+  padding:20px;
+ padding-top:0;
+ font-family: 'Orelega One', cursive;
+ color:#29293d;
+ font-size: 20px;  
+   }
+
+   #instructiuni p{ text-align:start;
+    padding:20px;
+   padding-top:0;
+   font-family: 'Orelega One', cursive;
+   color:#29293d;
+   font-size: 20px;  
+    }
+
+    #textinfo h3{ text-align:start;
+      padding:10px;padding-left:30px;
+     padding-top:0;
+     font-family: 'Orelega One', cursive;
+     color:#29293d;  
+    font-size: 22px; }
+
+
+    #instructiuni{margin-left: 10vw;
+      padding-top:100px; 
+      
+      flex-basis: 30vw;
+      padding-bottom:50px;
+      order: 2;
+    }
+   
+   #continut1{
+      display:flex;
+    height:100%;
+    width: 100%;
+    padding-top: 200px;
+    flex-wrap: wrap;
+  }
+
+
+
+  #instructiuni h2 {  text-align:start;
+    padding:20px;
+   padding-top:0;
+   font-family: 'Orelega One', cursive;
+   color:#29293d;  
+  font-size: 30px;
+  }  
+
+
+
+  #meniutel{display: none;}
+
+
+         
+
+#meniutel ul li a{text-decoration:none;color:#d14775 ;font-family: 'Orelega One', cursive;
+}
+#meniutel ul li a:hover{color:	#b3003b;}
+
+
+#meniutel ul .text{color:#b82e5c;font-family: 'Orelega One', cursive;font-size: 25px;
+
+}
+
+
+#meniutel ul{list-style:none;}
+#meniutel ul li{padding: 10px;
+
+}
+
+
+
+
+@media only screen and (max-width:1265px) {
+
+
+ 
+
+
+
+
+
+
+
+  #continut{
+    width: auto;
+  padding-top:100px;
+  }
+
+
+
+
+  #mijloc{background-color:transparent;
+    height:auto; width:1300px;    
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    margin-top:50px;margin-bottom: 100;
+     margin-left:0px;
+     }
+
+
+  #meniu{
+    display: none;
+    
+  }
+  
+    #meniutel{
+      display: block;
+      margin-left:30px;
+      font-size:20px; 
+      margin-bottom:20px; 
+      flex-basis:50%;
+              
+  }
+  
+  
+  
+   
+  #butoane{justify-content: flex-start;
+  margin-left:20px;
+  }
+    
+
+
+  #casuta a #pret{
+    font-size:10px;
+  }
+ 
+
+
+
+#jos{ height:250px;}
+
+#jos h1{
+margin-left:30px;
+padding-top: 50px;
+font-family: 'Orelega One', cursive;
+margin-bottom: 40px;
+color: #b82e5c
+}
+#jos p{
+margin-left:30px;
+padding-top:5px;
+font-family: 'Orelega One', cursive;
+color: #d14775;;
+
+}
+
+  
+    
+
+
+#poza img{ 
+width:90vw;
+height:135vw;
+}
+
+
+#poza{
+  padding:0;
+  padding-top:20px; 
+  padding-bottom:0px;
+   margin:auto;
+
+  }
+  
+ 
+
+#textinfo{margin-left: 10vw;
+       padding-top:0px;    
+       padding-bottom:0px;
+       margin-right:40px;
+     flex-basis: 100%;
+
+      
+      
+           
+
+}
+
+#textinfo h1{text-align:start;
+             padding:20px;
+            padding-top:0;
+            margin-bottom: 40px;
+            
+            }
+
+#textinfo h2 {  text-align:start;
+  padding:20px;
+ padding-top:0;
+ font-family: 'Orelega One', cursive;
+ color:#29293d;  
+font-size: 30px;
+}  
+
+ #textinfo ul{   
+  text-align:start;
+  padding:20px;
+ padding-top:0;
+ font-family: 'Orelega One', cursive;
+ color:#29293d;
+ font-size: 20px;  
+   }
+
+   #textinfo p{ text-align:start;
+    padding:20px;
+   padding-top:0;
+   font-family: 'Orelega One', cursive;
+   color:#29293d;
+   font-size: 20px;  
+    }
+
+    #textinfo h3{ text-align:start;
+      padding:10px;padding-left:30px;
+     padding-top:0;
+     font-family: 'Orelega One', cursive;
+     color:#29293d;  
+    font-size: 22px; }
+   
+   #continut1{ display:flex;
+   
+    
+  
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1023px) {
+
+
+  #navigatie{background-color:black;
+    display: block;
+     height:115px;
+     position: fixed;
+  
+    
+   
+  
+  
+  }
+  
+  #navigatie #sus{display:flex;justify-content: start;
+  
+     }
+  
+  #navigatie #sus #logouri{ 
+    padding:10px;
+    flex-basis:35%;
+    text-align:end;
+    
+  }
+  
+  #navigatie #sus #logouri .fab {
+    
+    margin-left:0px;
+    margin-right:20px;
+    font-size:25px;
+    padding-top:10px;
+    padding-bottom:10px;
+
+    
+  
+  
+  }
+  #navigatie #sus h1{ text-align:end; 
+     padding:10px;
+     font-size:35px;
+      flex-basis:65%;
+      margin-left:10px;
+     
+  
+  }
+  #navigatie #sus #none{
+    padding:0px;
+    flex-basis:0%
+  
+  }
+
+
+
+
+
+
+
+
+  #continut{
+    width: auto;
+  padding-top:100px;
+  }
+
+
+
+
+  #mijloc{background-color:transparent;
+    height:auto; width:1200px;    
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    margin-top:50px;margin-bottom: 100;
+     margin-left:0px;
+     }
+
+
+  #meniu{
+    display: none;
+    
+  }
+  
+    #meniutel{
+      display: block;
+      margin-left:30px;
+      font-size:20px; 
+      margin-bottom:20px; 
+      flex-basis:50%;
+              
+  }
+  
+  
+  
+   
+  #butoane{justify-content: flex-start;
+  margin-left:20px;
+  }
+    
+
+
+  #casuta a #pret{
+    font-size:10px;
+  }
+ 
+
+
+
+#jos{ height:250px;}
+
+#jos h1{
+margin-left:30px;
+padding-top: 50px;
+font-family: 'Orelega One', cursive;
+margin-bottom: 40px;
+color: #b82e5c
+}
+#jos p{
+margin-left:30px;
+padding-top:5px;
+font-family: 'Orelega One', cursive;
+color: #d14775;;
+
+}
+
+  
+    
+
+
+#poza img{ 
+width:90vw;
+height:135vw;
+}
+
+
+#poza{
+  padding:0;
+  padding-top:20px; 
+  padding-bottom:0px;
+   margin:auto;
+
+  }
+  
+ 
+
+#textinfo{margin-left: 10vw;
+       padding-top:0px;    
+       padding-bottom:0px;
+       margin-right:40px;
+     flex-basis: 100%;
+
+      
+      
+           
+
+}
+
+#textinfo h1{text-align:start;
+             padding:20px;
+            padding-top:0;
+            margin-bottom: 40px;
+            
+            }
+
+#textinfo h2 {  text-align:start;
+  padding:20px;
+ padding-top:0;
+ font-family: 'Orelega One', cursive;
+ color:#29293d;  
+font-size: 30px;
+}  
+
+ #textinfo ul{   
+  text-align:start;
+  padding:20px;
+ padding-top:0;
+ font-family: 'Orelega One', cursive;
+ color:#29293d;
+ font-size: 20px;  
+   }
+
+   #textinfo p{ text-align:start;
+    padding:20px;
+   padding-top:0;
+   font-family: 'Orelega One', cursive;
+   color:#29293d;
+   font-size: 20px;  
+    }
+
+    #textinfo h3{ text-align:start;
+      padding:10px;padding-left:30px;
+     padding-top:0;
+     font-family: 'Orelega One', cursive;
+     color:#29293d;  
+    font-size: 22px; }
+   
+   #continut1{ display:flex;
+   
+    
+  
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width:767px) {
+
+
+    #navigatie{background-color:black;
+      display: block;
+       height:115px;
+       position: fixed;
+    
+      
+     
+    
+    
+    }
+    
+    #navigatie #sus{display:flex;justify-content: start;
+    
+       }
+    
+    #navigatie #sus #logouri{ 
+      padding:10px;
+      flex-basis:30%;
+      text-align:end;
+      
+    }
+    
+    #navigatie #sus #logouri .fab {
+      
+      margin-left:0px;
+      margin-right:20px;
+      font-size:25px;
+      padding-top:10px;
+      padding-bottom:10px;
+
+      
+    
+    
+    }
+    #navigatie #sus h1{ text-align:end; 
+       padding:10px;
+       font-size:35px;
+        flex-basis:65%;
+        margin-left:10px;
+       
+    
+    }
+    #navigatie #sus #none{
+      padding:0px;
+      flex-basis:0%
+    
+    }
+
+    #menu{
+      justify-content: flex-start;
+      
+    }   
+
+ #menu ul{     
+  order: 2;
+  padding: 10px;
+    flex-basis: 20%;
+    text-align: end;
+    margin:0;
+    padding-bottom:0;
+    padding-top: 0;
+    text-align: end;
+    margin-left: 0px;
+    padding-left:10px;
+ }   
+     
+
+ #menu ul a{
+   display: none;
+ }
+  
+
+ #menu ul .apti{ 
+display:block;
+
+ }
+
+ #menu ul li{
+  padding-top:7px;
+   width: auto;
+   padding-left: 0;
+   padding-right:0;
+   margin-left: 10px;
+   
+             
+}
+
+
+
+#menu .wrapper{
+  margin:0;
+  text-align: end;
+  padding: 10px;
+  flex-basis: 75%;
+  margin-left: 10px;
+  padding-top: 5px;
+  justify-content: flex-end;
+  padding-left:10px;
+  
+}
+   
+
+.wrapper .search-input{ 
+                        max-width:70% ;
+                        margin-left:10px;
+ 
+  
+
+}    
+
+.search-input input {   
+  
+  padding: 0 0px 0  20px;
+
+}
+
+
+
+           #menu  li:hover{
+             background-color:#00ffbf; 
+            }
+
+
+            #menu  .search {display: none;}        
+           
+
+
+
+  
+
+    #continut{width: auto;
+    padding-top:100px;
+    }
+
+
+    #meniu{
+      display: none;
+    
+    }
+    
+      #meniutel{
+        display: block;
+        margin-left:30px;
+        font-size:20px; 
+        margin-bottom:20px; 
+        flex-basis:50%;
+                
+    }
+    
+    
+    #mijloc{
+      display:flex;
+       margin-left:auto;
+      margin-right:auto; 
+      margin-top:50px;
+      justify-content: start;
+      
+       }
+
+       #casuta{
+         max-width: calc(100% - 4px);
+        flex-basis: calc(100% - 4px);
+        margin:5px;
+        margin-top:30px
+      }
+     
+    #casuta a #pret{
+        font-size:12px;
+      }
+     
+   
+    
+    
+    #butoane{display:none;    
+     
+    }
+
+
+    
+
+    #butoane2{flex-basis:100%;display: flex;justify-content: flex-start;margin-left:40px;
+      font-family: 'Orelega One', cursive;
+      color: #cb3466;
+      
+      
+    }
+    #butoane2 a #schimb1 { background-color:transparent;font-size:20px;margin-left: 5px; }
+    #butoane2 a #schimb2 {background-color:transparent;font-size:20px; margin-left: 5px;}
+    
+    #butoane2 a #schimb1 {
+      color:#ff0040;
+       text-decoration: none;
+       font-size:23px;
+    }
+    #butoane2 p {font-size: 23px;}
+    
+    #butoane2 a #schimb2 { text-decoration: none;
+    color: #cb3466;font-size:23px;
+    
+    }
+    
+    #butoane2 a{text-decoration: none;}
+    
+
+
+
+#jos{
+  height:400px;
+  background-color:#eaeaea;
+  margin-top: 30px;
+  display: block;
+  
+}
+
+
+
+
+
+#jos h1{
+  margin-left:30px;
+ padding-top: 50px;
+ font-family: 'Orelega One', cursive;
+ margin-bottom: 40px;
+ color: #b82e5c
+}
+#jos p{
+  margin-left:30px;
+  padding-top:5px;
+  font-family: 'Orelega One', cursive;
+  color: #d14775;;
+
+}
+
+    
+      
+
+
+#poza img{ 
+  width:90vw;
+  height:135vw;
+  }
+
+
+  #poza{
+    padding:0;
+    padding-top:20px; 
+    padding-bottom:0px;
+     margin:auto;
+
+    }
+    
+   
+  
+  #textinfo{margin-left: 10vw;
+         padding-top:0px;    
+         padding-bottom:0px;
+         margin-right:40px;
+       flex-basis: 100%;
+
+        
+        
+             
+  
+  }
+  
+  #textinfo h1{text-align:start;
+               padding:20px;
+              padding-top:0;
+              margin-bottom: 40px;
+              
+              }
+  
+  #textinfo h2 {  text-align:start;
+    padding:20px;
+   padding-top:0;
+   font-family: 'Orelega One', cursive;
+   color:#29293d;  
+  font-size: 30px;
+  }  
+  
+   #textinfo ul{   
+    text-align:start;
+    padding:20px;
+   padding-top:0;
+   font-family: 'Orelega One', cursive;
+   color:#29293d;
+   font-size: 20px;  
+     }
+  
+     #textinfo p{ text-align:start;
+      padding:20px;
+     padding-top:0;
+     font-family: 'Orelega One', cursive;
+     color:#29293d;
+     font-size: 20px;  
+      }
+  
+      #textinfo h3{ text-align:start;
+        padding:10px;padding-left:30px;
+       padding-top:0;
+       font-family: 'Orelega One', cursive;
+       color:#29293d;  
+      font-size: 22px; }
+     
+     #continut1{ display:flex;
+     
+      
+    
+    }
+    
+
+  }
+
+
+
+
+
+  
+
+
+
+
+ 
